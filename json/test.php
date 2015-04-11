@@ -3,7 +3,13 @@
 include_once 'includes.php';
 
 echo "HERE what comes in POST:\n";
-var_dump($_POST);
+
+//TEST
+$dat = urldecode(substr(file_get_contents('php://input'),6));
+//REAL
+//$dat = urldecode(file_get_contents('php://input'));
+
+var_dump($dat);
 
 echo "\n\n try to decode 'value':\n";
 
