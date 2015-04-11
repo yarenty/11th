@@ -2,15 +2,15 @@
 
 include_once 'includes.php';
 
-echo "<pre>";
-var_dump($_POST);
-$in = json_decode($_POST["value"]);
 
-echo "and ...<br/>\n";
+$out = false;
 
-var_dump($in);
+//TEST
+//$dat = urldecode(substr(file_get_contents('php://input'),6));
+//REAL
+$dat = urldecode(file_get_contents('php://input'));
 
-echo "</pre>\n<br/>";
+$in = json_decode($dat);
 
 
 $u = new Manager();
@@ -27,10 +27,9 @@ $u->facebook = $in->facebook;
 $u->twitter = $in->twitter;
 
 
-var_dump($u);
 
 
 $x = $u->save();
 
-echo json_encode($x);
+echo json_encode(array("id" => $x));
 ?>

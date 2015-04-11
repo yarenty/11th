@@ -33,6 +33,5 @@ $s1->history = $h;
  //
 
 
-
 echo json_encode($s1);
 ?>

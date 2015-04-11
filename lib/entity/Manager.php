@@ -49,7 +49,6 @@ class Manager {
 
 
 	function save(){
-		echo "\n\n!!!!!call\n";
 		$db  = new db();
 		$sql = "insert into ".$db->prefix."manager (
 			username,
@@ -76,7 +75,7 @@ class Manager {
 		
 		debug("SQL::".$sql);
 		
-		echo $sql;
+		//echo $sql;
 		
 		$out = $db->insertRow($sql);
 
