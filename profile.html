@@ -130,6 +130,27 @@
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script>
+		$('#on').click(function() {
+			$('#on').toggleClass('active');
+			$('#on').toggleClass('btn-success');
+			$('#on').toggleClass('btn-default');
+
+			$('#off').toggleClass('active');
+			$('#off').toggleClass('btn-danger');
+			$('#off').toggleClass('btn-default');
+		});
+		$('#off').click(function() {
+			$('#on').toggleClass('active');
+			$('#on').toggleClass('btn-success');
+			$('#on').toggleClass('btn-default');
+
+			$('#off').toggleClass('active');
+			$('#off').toggleClass('btn-danger');
+			$('#off').toggleClass('btn-default');
+		});
+	</script>
+
 
 </body>
 
