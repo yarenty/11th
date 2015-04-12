@@ -56,14 +56,14 @@ if ($error_already) {
 							              
                   
                   <div class="form-group">
-                    <label for="firstname" class="col-lg-2 control-label">First name</label>
+                    <label for="firstname" class="control-label">First name</label>
                       <input type="text" class="form-control"   
                       class="form-control" placeholder="First Name" id="firstname" name="firstname" required data-validation-required-message="Please put your first name."
                       <?php if (isset($u->firstname)) echo 'value="'.$u->firstname.'"';?>>
                   </div>
 
                   <div class="form-group">
-                    <label for="lastname" class="col-lg-2 control-label">Last name</label>
+                    <label for="lastname" class="control-label">Last name</label>
                       <input type="text" class="form-control" id="lastname"  
                       class="form-control" placeholder="Last Name"  name="lastname" required data-validation-required-message="Please put your last name."
                       <?php if (isset($u->lastname)) echo 'value="'.$u->lastname.'"';?>>
@@ -78,7 +78,7 @@ if ($error_already) {
 							
 							
                   <div class="form-group">
-                    <label for="phone" class="col-lg-2 control-label">Phone</label>
+                    <label for="phone" class="control-label">Phone</label>
                       <input type="text" class="form-control" id="phone"  
                       class="form-control" placeholder="+353xxxx" name="phone" required data-validation-required-message="Please put your phone number."
                       <?php if (isset($u->phone)) echo 'value="'.$u->phone.'"';?>>
@@ -107,84 +107,51 @@ if ($error_already) {
 										Mixologist</label>
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword1">Years Experience</label>
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-										Years Experience
-										<span class="caret" id="dropdownCaret"></span>
-									</button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">1</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">2</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">3</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">4</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">5</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">6</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">7</a>
-										</li>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">8</a>
-										</li>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">9</a>
-										</li>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" href="#">10+</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+							
+                  <div class="form-group">
+                    <label for="experience" class="control-label">Years of experience</label>
+                      <input type="text" class="form-control" id="experience"  
+                      class="form-control" placeholder="1 .. 10+" name="experience"
+                      <?php if (isset($u->expeirence)) echo 'value="'.$u->experience.'"';?>>
+                  </div>
+
 				
 								<div class="form-group">
-									<label for="exampleInputPassword1">Expected Wage</label>
-									<label class="sr-only" for="exampleInputAmount">Amount (in euro)</label>
+									<label for="wage">Expected Wage</label>
+									<label class="sr-only" for="wage1">Amount (in euro)</label>
 									<div class="input-group">
 										<div class="input-group-addon">
 											€
 										</div>
-										<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+										<input type="text" class="form-control" id="wage" name="wage" placeholder="Amount">
 									</div>
 								</div>
 							
 							
 		 	<div class="form-group<?php if ($error_name) echo " has-error";?>">
-                    <label for="username" class="col-lg-2 control-label">Username</label>
+                    <label for="username" class="control-label">Username</label>
                       <input type="text" class="form-control"   
                       class="form-control" placeholder="UserName *" id="username" name="username" required data-validation-required-message="Please choose your username."
                       <?php if (isset($u->username)) echo 'value="'.$u->username.'"';?>>
                   </div>
                   
                   <div class="form-group<?php if ($error_email) echo " has-error";?>">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                    <label for="inputEmail" class="control-label">Email</label>
                       <input id="inputEmail" name="mail" type="email" class="form-control" placeholder="Your Email *"  required data-validation-required-message="Please enter your email address."
                       <?php if (isset($u->email)) echo 'value="'.$u->email.'"';?>>
                   </div>
                   <div class="form-group<?php if ($error_password) echo " has-error";?>">
-                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    <label for="inputPassword" class="control-label">Password</label>
                       <input type="password" class="form-control" id="inputPassword" name="pass" placeholder="Your Password *"  required data-validation-required-message="Please create your password.">
                   </div>
                   <input type="hidden" name="register" value="yep"/>
+                  
+     <input type="hidden" name="facebook" value="yep"/>
+     <input type="hidden" name="skills" value="yep"/>
 
 
 	
-								<div class="form-group">
+							<div class="form-group">
 								<label for="exampleInputFile">Attach Your CV</label>
 								<input type="file" id="exampleInputFile">
 							</div>
@@ -192,8 +159,8 @@ if ($error_already) {
 		
 							
 		 <div class="form-group<?php if ($error_captcha) echo " has-error";?>">
-                    <label class="col-lg-2 control-label">Captcha: 2+2= </label>
-                    <div class="col-lg-10">
+                    <label class="control-label">Captcha: 2+2= </label>
+
                       <div class="radio">
                         <label>
                           <input type="radio" name="captcha" id="optionsRadios1" value="3" checked="">
@@ -218,7 +185,6 @@ if ($error_already) {
                           None of this
                         </label>
                       </div>
-                    </div>
                   </div>
  
 							<div class="checkbox">
