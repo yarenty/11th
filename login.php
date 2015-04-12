@@ -25,7 +25,7 @@ if (isset($_POST["username"])) {
 		
 		debug( "And in the session<br/>");
 		debug(print_r($_SESSION,true));
-		header('Location: /11th');
+		header('Location: /11th/index.php');
 	}
 }
 

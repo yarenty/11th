@@ -44,7 +44,7 @@ if (! isset ( $_SESSION ["user"] )) {
 			<li <?php if ($page=='history') {?> class="active" <?php } ?>><a href="history.php">Profile</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li <?php if ($page=='profile') {?> class="active" <?php } ?>><a href="profile.php" target="_self"><?php echo $user->name;?></a></li>
+			<li <?php if ($page=='profile') {?> class="active" <?php } ?>><a href="profile.php" target="_self"><?php echo $user->firstname." ".$user->lastname ;?></a></li>
 			<li><a href="logout.php" target="_self">LOGOUT</a></li>
 		</ul>
 	</div>

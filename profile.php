@@ -4,7 +4,7 @@ include_once 'lib/functions/default.php';
 
 
 $page='profile';
-if (! isset ( $_SESSION ["user"] )) header('Location: /todo');
+if (! isset ( $_SESSION ["user"] )) header('Location: /11th/index.php');
 
 @include 'template/head.phtml';
 $title = "Profile";
@@ -34,13 +34,13 @@ $u = $_SESSION ["user"];
 
                   
                   <div class="form-group">
-                  	 <label class="col-lg-2 control-label">Name</label>
-                  	 <div class="col-lg-10"><div class="myvalue"><?php echo $u->name;?></div></div>
+                  	 <label class="col-lg-2 control-label">username</label>
+                  	 <div class="col-lg-10"><div class="myvalue"><?php echo $u->username;?></div></div>
                   </div>
                   
                   <div class="form-group">
-                  	 <label class="col-lg-2 control-label">Mail</label>
-                  	 <div class="col-lg-10"><div class="myvalue"><?php echo $u->username;?></div></div>
+                  	 <label class="col-lg-2 control-label">e-mail</label>
+                  	 <div class="col-lg-10"><div class="myvalue"><?php echo $u->email;?></div></div>
                   </div>
 
                   <div class="form-group<?php if ($error_password) echo " has-error";?>">

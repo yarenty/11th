@@ -7,7 +7,7 @@ session_destroy();
 
 $page='logout';
 
-header('Location: /todo');
+header('Location: /11th/index.php');
 die();
 
 ?>
