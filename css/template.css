@@ -1,0 +1,105 @@
+HTML {
+	HEIGHT: 100%
+}
+BODY {
+	FONT-FAMILY: Verdana, Geneva, sans-serif; COLOR: #000; FONT-SIZE: 12px
+}
+IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+A:link {
+	COLOR: #666; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #666; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #333; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+INPUT[type=text] {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 1px solid; PADDING-TOP: 2px
+}
+INPUT[type=submit] {
+	BORDER-BOTTOM: #808080 1px solid; BORDER-LEFT: #808080 1px solid; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #edeff3; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BORDER-TOP: #808080 1px solid; BORDER-RIGHT: #808080 1px solid; PADDING-TOP: 3px
+}
+INPUT[type=button] {
+	BORDER-BOTTOM: #808080 1px solid; BORDER-LEFT: #808080 1px solid; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #edeff3; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BORDER-TOP: #808080 1px solid; BORDER-RIGHT: #808080 1px solid; PADDING-TOP: 3px
+}
+INPUT[type=submit]:hover {
+	BACKGROUND-COLOR: #e0e2e6; CURSOR: pointer
+}
+INPUT[type=button]:hover {
+	BACKGROUND-COLOR: #e0e2e6; CURSOR: pointer
+}
+FIELDSET {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+DIV#site_header {
+	BACKGROUND-IMAGE: url(../images/header.jpg); BACKGROUND-REPEAT: no-repeat; HEIGHT: 192px
+}
+H1.site_slogan {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+DIV#top_container UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+DIV#top_container UL LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+DIV#top_container UL LI UL {
+	DISPLAY: none
+}
+DIV#top_container UL LI A {
+	BACKGROUND-IMAGE: url(../images/contentheading.jpg); PADDING-BOTTOM: 0px; MARGIN: 10px 5px 5px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; DISPLAY: block; BACKGROUND-REPEAT: no-repeat; PADDING-TOP: 0px
+}
+DIV.breadcrumb_container {
+	FONT-SIZE: 11px
+}
+DIV.mainmod_top H3 {
+	BACKGROUND-IMAGE: url(../images/mainmod_arrow.jpg); PADDING-BOTTOM: 0px; PADDING-LEFT: 30px; PADDING-RIGHT: 0px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 7px 0px; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+H3.bottommodule_title {
+	BACKGROUND-COLOR: #ccc; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+DIV.bottommodule_content {
+	PADDING-BOTTOM: 12px; PADDING-LEFT: 40px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV.copyright {
+	FONT-SIZE: 11px
+}
+DIV.link_bottom {
+	COLOR: #cccccc; FONT-SIZE: 11px
+}
+A.link_bottom {
+	COLOR: #cccccc; FONT-SIZE: 11px
+}
+.componentheading {
+	PADDING-BOTTOM: 12px; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.contentheading {
+	BACKGROUND-IMAGE: url(../images/contentheading.jpg); PADDING-BOTTOM: 12px; PADDING-LEFT: 20px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 0px 2px; COLOR: #ec791c; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+DIV.blog_more {
+	BORDER-BOTTOM: #ccc 1px dotted; MARGIN-BOTTOM: 10px; BORDER-TOP: #ccc 1px dotted; PADDING-TOP: 10px
+}
+.contentpaneopen {
+	BORDER-BOTTOM: #ccc 1px dotted; MARGIN: 10px
+}
+.module_menu UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px 0px 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+.module_menu UL LI {
+	BACKGROUND-IMAGE: url(../images/mainmenu.jpg); PADDING-BOTTOM: 0px; MARGIN: 8px 8px 0px; PADDING-LEFT: 16px; PADDING-RIGHT: 0px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 0px 4px; PADDING-TOP: 0px
+}
+.module_menu UL LI A {
+	BORDER-BOTTOM: #666 1px dashed; PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-TOP: 0px
+}
+.module_menu UL UL LI {
+	BACKGROUND-IMAGE: none; PADDING-BOTTOM: 0px; MARGIN: 8px 0px 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.module_menu UL UL UL LI {
+	BACKGROUND-IMAGE: none; PADDING-BOTTOM: 0px; MARGIN: 8px 0px 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.span {
+	COLOR: #000
+}

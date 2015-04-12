@@ -1,0 +1,111 @@
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 15px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV#body_container {
+	MARGIN: 0px auto; WIDTH: 1004px; OVERFLOW: hidden
+}
+DIV#top_container {
+	FLOAT: right; MARGIN-RIGHT: 2px
+}
+DIV#site_header {
+	POSITION: relative; CLEAR: both
+}
+A.logo_link {
+	POSITION: absolute; WIDTH: 50px; DISPLAY: inline-block; HEIGHT: 50px; TOP: 30px; LEFT: 65px
+}
+H1.site_slogan {
+	POSITION: absolute; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline-block; TOP: 48px; PADDING-TOP: 0px; LEFT: 125px
+}
+DIV#panel_container {
+	MARGIN: 10px 0px 16px
+}
+DIV.search_container {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+#mod_search_searchword {
+	MARGIN: 0px; WIDTH: 150px
+}
+#search_button {
+	MARGIN: 0px 6px
+}
+DIV.breadcrumb_container {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 197px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 3px
+}
+DIV#mainarea {
+	CLEAR: both
+}
+DIV#left_colm {
+	WIDTH: 185px; FLOAT: left
+}
+DIV#right_colm {
+	WIDTH: 185px; FLOAT: right
+}
+DIV.message_container {
+	WIDTH: 612px
+}
+DIV#content_area {
+	MARGIN: 0px 190px 0px 195px
+}
+DIV.mainmod_top {
+	BACKGROUND-IMAGE: url(../images/mainmod_top.jpg); BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left bottom; HEIGHT: 36px; OVERFLOW: hidden
+}
+DIV.mainmod_top H3 {
+	MARGIN: 12px 10px 0px 0px
+}
+DIV.mainmod_content_container {
+	BACKGROUND-IMAGE: url(../images/mainmod_bg.jpg); BACKGROUND-REPEAT: repeat-y; BACKGROUND-POSITION: left 50%; OVERFLOW: hidden
+}
+DIV.mainmod_content {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 8px; PADDING-TOP: 1px
+}
+DIV.mainmod_bottom {
+	BACKGROUND-IMAGE: url(../images/mainmod_bottom.jpg); BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left top; HEIGHT: 23px; OVERFLOW: hidden
+}
+DIV.content_top {
+	BACKGROUND-IMAGE: url(../images/content_top.jpg); WIDTH: 612px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left bottom; HEIGHT: 8px; OVERFLOW: hidden
+}
+DIV#content_main {
+	BACKGROUND-IMAGE: url(../images/content_bg.jpg); WIDTH: 612px; BACKGROUND-REPEAT: repeat-y; BACKGROUND-POSITION: left 50%; OVERFLOW: hidden
+}
+DIV.content_main {
+	PADDING-BOTTOM: 12px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; PADDING-TOP: 8px
+}
+DIV.content_bottom {
+	BACKGROUND-IMAGE: url(../images/content_bottom.jpg); WIDTH: 612px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left top; HEIGHT: 30px; OVERFLOW: hidden
+}
+DIV.bottommod_top {
+	BACKGROUND-IMAGE: url(../images/bottommod_top.jpg); WIDTH: 612px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left bottom; HEIGHT: 8px; OVERFLOW: hidden
+}
+DIV.bottommod_content {
+	BACKGROUND-IMAGE: url(../images/bottommod_bg.jpg); WIDTH: 612px; BACKGROUND-REPEAT: repeat-y; BACKGROUND-POSITION: left 50%; OVERFLOW: hidden
+}
+DIV.bottommod_bottom {
+	BACKGROUND-IMAGE: url(../images/bottommod_bottom.jpg); WIDTH: 612px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left top; HEIGHT: 20px; OVERFLOW: hidden
+}
+H3.bottommodule_title {
+	PADDING-BOTTOM: 5px; MARGIN: 20px 3px 10px 1px; PADDING-LEFT: 40px; PADDING-RIGHT: 0px; BACKGROUND: #ccc; PADDING-TOP: 5px
+}
+DIV.bottommod_left {
+	WIDTH: 305px; FLOAT: left
+}
+DIV.bottommod_right {
+	MARGIN-LEFT: 305px
+}
+DIV.bottommod_left H3.bottommodule_title {
+	MARGIN: 20px 0px 10px 1px
+}
+DIV.bottommod_right H3.bottommodule_title {
+	MARGIN: 20px 3px 10px 0px
+}
+DIV.clear {
+	CLEAR: both
+}
+DIV#bottom2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px auto; PADDING-LEFT: 4px; WIDTH: 1004px; PADDING-RIGHT: 4px; OVERFLOW: hidden; BORDER-TOP: #808080 1px solid; PADDING-TOP: 10px
+}
+DIV.copyright {
+	FLOAT: right
+}
+DIV.link_bottom {
+	FLOAT: left; COLOR: #ccc
+}

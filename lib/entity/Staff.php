@@ -52,6 +52,7 @@ class Staff {
 
 
 	function save(){
+		
 		$db  = new db();
 		$sql = "insert into ".$db->prefix."staff (
 			username,
