@@ -18,4 +18,6 @@ if (isset ( $_SESSION ["user"] )) {
 	$uid = $user->id;
 }
 
+include_once 'lib/functions/default.php';
+
 ?>

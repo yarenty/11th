@@ -10,18 +10,8 @@ $page='home';
 
 @include 'template/top.phtml';
 
-?>
 
+@include 'template/ios_application.phtml';
 
-<?php 
-
-if (!isset($_SESSION["user"])) {
-	@include 'template/index.phtml';
-} else {
-	@include 'template/tasks.phtml';
-}
-?>
-
-<?php 
 @include 'template/bottom.phtml';
 ?>

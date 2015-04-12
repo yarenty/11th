@@ -46,6 +46,9 @@ $x[1] = $s2;
 $x[2] = $s3;
 $x[3] = $s4;
 
+//$d = new Object();
 
-echo json_encode($x);
+//$d->results = $x;
+
+echo json_encode(array("results"=>$x));
 ?>

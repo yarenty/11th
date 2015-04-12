@@ -1,18 +1,26 @@
 <!-- NAVBAR -->
 <body>
-	<div class="navbar-wrapper">
-		<div class="container">
-			<div class="navbar navbar-default navbar-static-top"
-				role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse"
-							data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span> <span
-								class="icon-bar"></span> <span class="icon-bar"></span> <span
-								class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="index.php" target="_self">11th HOUR</a>
+
+		<a class="brand" href="index.html" style="focus: 
+    background-color: #FFFFFF;
+    color: #FFFFFF;" ><img src="img/logo.png" style="width: 500px; height: 200px"></img>
+		</a>
+	
+			<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+					<a class="navbar-brand" href="index.html">Business Casual <span class="badge" id="badge"><?php echo $badge;?></span></a>
+
+				</div>
+				
 					</div>
 <?php
 if (! isset ( $_SESSION ["user"] )) {
@@ -20,16 +28,20 @@ if (! isset ( $_SESSION ["user"] )) {
 	debug ( "user not in the session<br/>" );
 	// not logged - default for all!
 	
-	?>    
-	<div class="navbar-collapse collapse">
-		<ul class="nav navbar-nav">
-			<li <?php if($page=='home') {?> class="active" <?php } ?>><a href="index.php">Home</a></li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li <?php if ($page=='register') {?> class="active" <?php } ?>><a href="register.php" target="_self">Register</a></li>
-			<li <?php if ($page=='login') {?> class="active" <?php } ?>><a href="login.php" target="_self">LOGIN</a></li>
-		</ul>
-	</div>
+	?>  				
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav" style="padding: 0px">
+						<li style="padding: 0px">
+							<a href="iosapp.php" style="padding-top: 25px">I am Looking for Staff</a>
+						</li>
+						<li style="padding: 0px">
+							<a href="register.php" style="padding-top: 25px">I am Looking for Work</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+
 <?php
 } else {
 	debug ( "user in the session<br/>" );
@@ -37,47 +49,22 @@ if (! isset ( $_SESSION ["user"] )) {
 	$user = $_SESSION ["user"];
 	// logged
 	?>  
-	<div class="navbar-collapse collapse">
-		<ul class="nav navbar-nav">
-			<li <?php if($page=='home') {?> class="active" <?php } ?>><a href="index.php">Home <span class="badge" id="badge"><?php echo $badge;?></span></a></li>
-			<li <?php if ($page=='chain') {?> class="active" <?php } ?>><a href="chain.php">Reqests</a></li>
-			<li <?php if ($page=='history') {?> class="active" <?php } ?>><a href="history.php">Profile</a></li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li <?php if ($page=='profile') {?> class="active" <?php } ?>><a href="profile.php" target="_self"><?php echo $user->firstname." ".$user->lastname ;?></a></li>
-			<li><a href="logout.php" target="_self">LOGOUT</a></li>
-		</ul>
-	</div>
-<?php
-}
-?>
-          
-</div>
-</div>
-</div>
-</div>
-
-<hr class="header-divider">
-
-	<div class="container">
-		<div class="bs-docs-section">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="bs-component">
-						<h1 id="tables"><?php echo $title;?></h1>
-					</div>
+	
+						<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav" style="padding: 0px">
+						<li style="padding: 0px">
+							<a href="iosapp.php" style="padding-top: 25px">I am Looking for Staff</a>
+						</li>
+						<li style="padding: 0px">
+							<a href="register.php" style="padding-top: 25px">I am Looking for Work</a>
+						</li>
+					</ul>
 				</div>
-				<div class="col-lg-6">
-					<div class="bs-component">
-						<blockquote class="pull-right">
-							<p>Failing to plan is planning to fail!</p>
-							<small><cite title="Source Title">belive me</cite></small>
-						</blockquote>
-					</div>
-				</div>
+				<!-- /.navbar-collapse -->		
+<? } ?>				
 			</div>
-		</div>
-	</div>
-<?php
-@include_once 'error.phtml';
-?>
+			<!-- /.container -->
+		</nav>
+		
+	
