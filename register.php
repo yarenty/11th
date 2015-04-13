@@ -39,10 +39,10 @@ if ($error_already) {
 					</div>
 					<div class="col-lg-6">
 						<h1>Login</h1>
-						<form action="login.php" id="login">
+						<form action="login.php" id="login" method="POST">
 						<div class="form-group">
 							<input type="text" class="form-control" name="username" placeholder="Username" style="margin-bottom: 5px; margin-top: 5px">
-							<input type="text" class="form-control" name="password" placeholder="Password" style="margin-bottom: 5px">
+							<input type="password" class="form-control" name="pass" placeholder="Password" style="margin-bottom: 5px">
 							<a href="javascript:login.submit();" class="btn btn-info" style="padding: 60px; padding-bottom: 5px; padding-top: 5px">Login</a>
 						</div>
 						</form>
@@ -291,7 +291,7 @@ else
   <h1>Registration successful</h1>
   <p>
   Please check your email -> there should be activation mail sent from rememome.com domain. <br/><br/>
-  You may login now using your email: <font color="red"><? echo $u->email; ?></font> and password: <font color="red"><? echo $u->password; ?></font>
+  You may login now using your email: <font color="red"><? echo $u->email; ?></font> 
   </p>
   <p><a class="btn btn-primary btn-lg" href="login.php">Login</a></p>
 </div>

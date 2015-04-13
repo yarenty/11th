@@ -1,7 +1,7 @@
 <?php
 //@TODO: temporary stuff!!
-error_reporting(-1);
-ini_set('display_errors', 'On');
+//error_reporting(-1);
+//ini_set('display_errors', 'On');
 
 include_once 'lib/db.php';
 include_once 'lib/utils.php';

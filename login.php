@@ -29,6 +29,12 @@ if (isset($_POST["username"])) {
 	}
 }
 
+if (isset($_SESSION["user"])){
+header('Location: /11th/index.php');	
+}
+
+//var_dump($_POST);
+header('Location: /11th/register.php');
 $page='login';
 
 @include 'template/head.phtml';

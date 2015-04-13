@@ -1,12 +1,5 @@
-<!-- NAVBAR -->
-<body>
-
-		<a class="brand" href="index.html" style="focus: 
-    background-color: #FFFFFF;
-    color: #FFFFFF;" ><img src="img/logo.png" style="width: 500px; height: 200px"></img>
-		</a>
-	
-			<nav class="navbar navbar-default" role="navigation">
+		<br><br>
+		<nav class="navbar navbar-default" role="navigation" style="height: 150px; background-color: #FFFFFF">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -17,52 +10,25 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-					<a class="navbar-brand" href="index.html">Business Casual <span class="badge" id="badge"><?php echo $badge;?></span></a>
-
+					<a class="navbar-brand" href="index.php">11th Hour</a>
 				</div>
-				
-					</div>
-<?php
-if (! isset ( $_SESSION ["user"] )) {
-	
-	debug ( "user not in the session<br/>" );
-	// not logged - default for all!
-	
-	?>  				
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav" style="padding: 0px">
 						<li style="padding: 0px">
-							<a href="iosapp.php" style="padding-top: 25px">I am Looking for Staff</a>
+							<a href="iosapp.php" style="padding-top: 65px; padding-bottom: 50px">I am Looking for Staff</a>
 						</li>
 						<li style="padding: 0px">
-							<a href="register.php" style="padding-top: 25px">I am Looking for Work</a>
+							<a class="brand" href="index.php" style="focus:
+							background-color: #FFFFFF;
+							color: #FFFFFF; padding-top: 0px; padding-b: 0px" ><img src="img/11_th_logo.png" style="width: 170px; height: 150px;"></img> </a>
+						</li>
+						<li style="padding: 0px">
+							<a href="register.php" style="padding-top: 65px; padding-bottom: 50px">I am Looking for Work</a>
 						</li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
-
-<?php
-} else {
-	debug ( "user in the session<br/>" );
-	debug ( print_r ( $_SESSION ["user"], true ) );
-	$user = $_SESSION ["user"];
-	// logged
-	?>  
-	
-						<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav" style="padding: 0px">
-						<li style="padding: 0px">
-							<a href="iosapp.php" style="padding-top: 25px">I am Looking for Staff</a>
-						</li>
-						<li style="padding: 0px">
-							<a href="register.php" style="padding-top: 25px">I am Looking for Work</a>
-						</li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->		
-<? } ?>				
 			</div>
 			<!-- /.container -->
 		</nav>

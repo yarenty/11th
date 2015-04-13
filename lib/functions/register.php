@@ -58,7 +58,7 @@ debug("CAPTCHA:".$_POST["captcha"]);
 			//twitter
  
  
-var_dump($u);
+//var_dump($u);
 
 if ($register_success) {
 	debug("call to save");
